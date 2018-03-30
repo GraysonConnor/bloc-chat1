@@ -5,7 +5,7 @@ import RoomList from './components/RoomList';
 
 
 // Initialize Firebase
-  var config = {
+var config = {
     apiKey: "AIzaSyBNY0fSp2GT5dT65HUzRy05BiItLTIlBTY",
     authDomain: "bloc-chat1-8e5e4.firebaseapp.com",
     databaseURL: "https://bloc-chat1-8e5e4.firebaseio.com",
@@ -18,7 +18,9 @@ import RoomList from './components/RoomList';
 class App extends Component {
   render() {
     return (
+    <div className="App">
     <RoomList firebase={firebase}/>
+    </div>
     );
   }
 }
